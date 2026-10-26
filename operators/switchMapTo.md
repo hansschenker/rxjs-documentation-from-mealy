@@ -1,5 +1,7 @@
 # `switchMapTo` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `switchMapTo` applies `switchMap`'s only-latest policy while mapping every source value to the same supplied inner Observable.

@@ -1,5 +1,7 @@
 # `concat` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 The pipeable `concat` operator emits the source first and then the additional Observable inputs one at a time in the order supplied.

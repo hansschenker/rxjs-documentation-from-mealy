@@ -1,5 +1,7 @@
 # `concatMapTo` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `concatMapTo` has the same queueing policy as `concatMap`, but every source value maps to the same supplied inner Observable.

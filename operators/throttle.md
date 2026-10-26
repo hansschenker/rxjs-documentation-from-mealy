@@ -1,5 +1,7 @@
 # `throttle` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `throttle` opens a suppression duration from an accepted source value and controls whether leading and trailing values are emitted.

@@ -1,5 +1,7 @@
 # `debounceTime` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `debounceTime` keeps the latest source value pending until the source has been silent for the configured duration.

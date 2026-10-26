@@ -1,5 +1,7 @@
 # `pluck` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `pluck` reads a configured property path from every source value and emits the value found at that path.

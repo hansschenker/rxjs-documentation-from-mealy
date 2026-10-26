@@ -1,5 +1,7 @@
 # `concatMap` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `concatMap` starts with no active inner stream and an empty queue.

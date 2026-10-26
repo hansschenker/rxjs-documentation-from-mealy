@@ -1,5 +1,7 @@
 # `find` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `find` searches source values in order for the first value that satisfies a predicate.

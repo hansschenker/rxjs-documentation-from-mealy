@@ -1,5 +1,7 @@
 # `sample` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `sample` remembers the latest source value that has arrived since the previous sample.

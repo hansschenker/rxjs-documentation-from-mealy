@@ -1,5 +1,7 @@
 # `onErrorResumeNext` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `onErrorResumeNext` forwards values from the source and then continues through the supplied Observable inputs in sequence.

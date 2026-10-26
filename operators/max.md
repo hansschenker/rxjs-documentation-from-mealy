@@ -1,5 +1,7 @@
 # `max` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `max` remembers the greatest source value seen so far according to the supplied comparer, or normal JavaScript ordering when no comparer is supplied.

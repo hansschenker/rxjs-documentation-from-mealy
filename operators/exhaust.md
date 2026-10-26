@@ -1,5 +1,7 @@
 # `exhaust` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `exhaust` receives inner Observables and allows only the first inner that arrives while no inner is active.

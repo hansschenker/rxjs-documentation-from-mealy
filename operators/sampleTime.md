@@ -1,5 +1,7 @@
 # `sampleTime` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `sampleTime` periodically checks for the latest source value using the configured scheduler and period.

@@ -1,5 +1,7 @@
 # `timeoutWith` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `timeoutWith` is the deprecated convenience form of timeout behavior that switches to a supplied Observable when the timeout expires.

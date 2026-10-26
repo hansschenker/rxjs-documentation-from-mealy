@@ -1,5 +1,7 @@
 # `race` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 The pipeable `race` operator mirrors whichever participant wins the race among the source and supplied Observable inputs.

@@ -1,5 +1,7 @@
 # `takeLast` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `takeLast` keeps only the final configured number of source values in a rolling buffer and emits nothing while the source is active.

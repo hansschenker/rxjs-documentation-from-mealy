@@ -1,5 +1,7 @@
 # `refCount` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `refCount` manages the connection of a connectable Observable from the number of downstream subscribers.

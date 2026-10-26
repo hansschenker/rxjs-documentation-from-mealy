@@ -1,5 +1,7 @@
 # `mergeMap` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `mergeMap` projects each source value to an inner Observable and allows projected inners to overlap.

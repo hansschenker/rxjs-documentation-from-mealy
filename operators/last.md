@@ -1,5 +1,7 @@
 # `last` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `last` remembers the most recent source value that qualifies, using the optional predicate when supplied.

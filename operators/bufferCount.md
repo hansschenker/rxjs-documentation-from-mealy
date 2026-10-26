@@ -1,5 +1,7 @@
 # `bufferCount` Operator Behavior
 
+> New here? [How to read this page](../README.md#how-to-read-a-page) explains the two parts below. <!-- rxjs-visualizer:how-to-read -->
+
 ## Operator Behavior in Plain Language
 
 `bufferCount` groups source values into arrays according to a maximum buffer size and an optional interval for starting new buffers.
