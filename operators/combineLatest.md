@@ -7,3 +7,38 @@ The pipeable `combineLatest` operator combines the source with the additional Ob
 It subscribes to all participants and remembers the latest value from each. Nothing is emitted until every participant has emitted at least once. After that, every new value from any participant emits a combined array or selector result built from all current latest values.
 
 A completed participant keeps contributing its last value if it produced one. The result completes when all participants complete. Any participant error terminates the result.
+
+## Visualization
+
+<!-- rxjs-visualizer:start -->
+**[▶ Watch `combineLatestWith` run frame by frame](https://netxpert.ch/rxjs-visualizer/combineLatestWith.html)** (the deprecated operator `combineLatest(...others)` is `combineLatestWith(...others)`, so its visualization is `combineLatestWith`'s). The page runs the RxJS 7.8.2 marble test below, *should combine events from two cold observables*, through the real `TestScheduler` and draws it one column per virtual frame: the inputs on top, the operator's row in the middle (its windows, the values it reacts to or drops, the inner subscriptions it makes) and the output lane at the bottom, where rings are the expected values and fills what actually arrived. Press Start or drag the scrubber; hover a marble for its frame and value. The text next to the drawing explains the operator step by step with a runnable sample.
+
+```ts
+it('should combine events from two cold observables', () => {
+  testScheduler.run(({ cold, expectObservable }) => {
+    const e1 = cold(' -a--b-----c-d-e-|');
+    const e2 = cold(' --1--2-3-4---|   ');
+    const expected = '--A-BC-D-EF-G-H-|';
+
+    const result = e1.pipe(
+      combineLatestWith(e2),
+      map(([a, b]) => a + b)
+    );
+
+    expectObservable(result).toBe(expected, {
+      A: 'a1',
+      B: 'b1',
+      C: 'b2',
+      D: 'b3',
+      E: 'b4',
+      F: 'c4',
+      G: 'd4',
+      H: 'e4',
+    });
+  });
+});
+```
+
+Entry 18. Nothing until both inputs have a value (A at 2), then every value of either input re-emits the latest pair. e2 completing at 13 changes nothing: its last value 4 keeps being combined. `String(a) + String(b)` is the typed spelling of `a + b`.
+
+<!-- rxjs-visualizer:end -->
